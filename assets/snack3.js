@@ -1,4 +1,4 @@
-const result = [];
+let somma = 0;
 
 for(i = 0; i < 10; i++){
     let numero = i + 1;
@@ -7,18 +7,7 @@ for(i = 0; i < 10; i++){
     valore = Number(prompt(`inserisci il ` + user_num))
     console.log(`valore inserito ${valore}`);
 
-    result.push(valore)
+    somma = somma + valore; 
 }
 
-function somma(array){
-    let sum = 0;
-
-    for(let i = 0; i < Array.length; i++){
-        sum += array[i];
-    }
-    return sum;
-}
-let calcolo = sum;
-
-console.log(calcolo);
-console.log(result);
+console.log(somma);
